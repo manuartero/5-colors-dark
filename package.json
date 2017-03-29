@@ -2,7 +2,7 @@
     "name": "5-colors-dark",
     "displayName": "5 Colors Dark",
     "description": "VSC simple dark theme",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "publisher": "manutero",
     "engines": {
         "vscode": "^1.5.0"
