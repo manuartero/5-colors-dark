@@ -1,23 +1,23 @@
 {
-    "name": "5-colors-dark",
-    "displayName": "5 Colors Dark",
-    "description": "VSC simple dark theme",
-    "version": "0.2.1",
-    "publisher": "manutero",
-    "engines": {
-        "vscode": "^1.5.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "icon": "icon.png",
-    "contributes": {
-        "themes": [
-            {
-                "label": "5 Colors Dark",
-                "uiTheme": "vs-dark",
-                "path": "./themes/5-colors-dark.tmTheme"
-            }
-        ]
-    }
+  "name": "simple-dark-theme",
+  "displayName": "Simple Dark Theme",
+  "description": "Color theme for VSCode that follows the KISS principle",
+  "version": "2.0.0",
+  "publisher": "manutero",
+  "engines": {
+    "vscode": "^1.26.0"
+  },
+  "icon": "icon.png",
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Simple Dark Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Simple Dark Theme-color-theme.json"
+      }
+    ]
+  }
 }

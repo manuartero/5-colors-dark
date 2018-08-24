@@ -1,0 +1,85 @@
+prepaidOffer:
+  recurrentPackageStatus:
+    activeStatus: "active" # used across the code base for checking packages that are active (regardless the substatus)
+
+    mapping:
+      - Active: # ACTIVO
+          status: "active"
+      - ActiveDeleting: # ACTIVO_EN_BAJA
+          status: "active"
+          substatus: "subscription-cancelled"
+      - ActiveDeletingPending: # ACTIVO_EN_BAJA
+          status: "active"
+          substatus: "subscription-cancelled"
+      - ActiveExhausted: # ACTIVO
+          status: "active"
+      - ActivePending: # SUBSCRITO
+          status: "pending"
+      - ActivePendingRenewal: # ACTIVO
+          status: "active"
+      - ActiveWithErrors: # ACTIVO
+          status: "active"
+      - Subscribed: # SUBSCRITO
+          status: "pending"
+      - SubscribedActive: # SUBSCRITO
+          status: "pending"
+      - SubscribedExpired: # SUBSCRITO
+          status: "pending"
+      - Deleted: # TODO MOVAR-1177 remove this mapping
+          status: "cancelled"
+          substatus: "subscription-cancelled"
+
+    # subscribed packages with any of these status will be discarded (ProductInventory)
+    blacklist:
+      - "DeletePending"
+      - "Deleted"
+      - "Error"
+      - "SubscribedPending"
+      - "UnableToComply"
+
+    # subscribing to a package (ProductOrder): possible errors
+    anticipateSubscriptionErrors:
+      insufficientBalance: # maps to a bad request: "insufficient balance for purchase"
+        - "NoOkNoBalance"
+
+    # unsubscription from active package (ProductInventory)
+    cancelSubscriptionStatus: "cancelled" # success response is a ProductInstanceStatusType with status assigned to this value
+    expectedCancellationStatus: "subscription-cancelled" # expected status of the response (TODO MOVAR-1177)
+
+  recurrentPackageDescription:
+    defaultPlaceholder: "##"
+    megasCommercialNaming: " Megas"
+    gigasCommercialNaming: " Gigas"
+    megaCommercialNaming: " Mega"
+    gigaCommercialNaming: " Giga"
+    templates:
+      # order IS important (append), will apply a different logic depending on the templateType
+      # possible values are:
+      #  NAME                         replace package.name
+      #  BOLTON (expected boltonName) replace package.trafficBoltons[boltonName] and uses commercialNaming if isDataTemplate
+      #  DURATION                     replace package.durationInHours/24 and format as it as decimal number
+      #  PRICING                      replace package.cost and format is as decimal number
+      #  ZERO_RATING_PROMOTION        append the template as it is if package.hasZeroRating is true
+      - template: "Con el Pack ## podés disfrutar de "
+        templateType: NAME
+      - template: "WhatsApp Gratis, "
+        templateType: ZERO_RATING_PROMOTION
+      - template: "##, "
+        templateType: BOLTON
+        boltonName: "data"
+        unlimitedText: "Megas ilimitados, "
+        isDataTemplate: true
+      - template: "## Minutos a cualquier compañía y "
+        templateType: BOLTON
+        boltonName: "minutesOff"
+        unlimitedText: "Minutos ilimitados a cualquier compañía y "
+        isDataTemplate: false
+      - template: "## SMS "
+        templateType: BOLTON
+        boltonName: "sms"
+        isDataTemplate: false
+        unlimitedText: "SMS ilimitados "
+      - template: "para usar durante ## días, "
+        templateType: DURATION
+      - template: "que se renovarán automáticamente siempre que tengas $## o más en tu saldo de recargas"
+        templateType: PRICING
