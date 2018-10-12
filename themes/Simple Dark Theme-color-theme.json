@@ -769,7 +769,7 @@
     {
       "scope": "string",
       "settings": {
-        "foreground": "#fcc067"
+        "foreground": "#d7ba7d"
       }
     },
     {
@@ -1130,28 +1130,28 @@
       "name": "strings I",
       "scope": "punctuation.definition.template-expression.begin",
       "settings": {
-        "foreground": "#fcc067"
+        "foreground": "#d7ba7d"
       }
     },
     {
       "name": "strings II",
       "scope": "punctuation.definition.template-expression.end",
       "settings": {
-        "foreground": "#fcc067"
+        "foreground": "#d7ba7d"
       }
     },
     {
       "name": "strings III",
       "scope": "punctuation.definition.string",
       "settings": {
-        "foreground": "#fcc067"
+        "foreground": "#d7ba7d"
       }
     },
     {
       "name": "strings IV",
       "scope": "constant.character.escape",
       "settings": {
-        "foreground": "#fcc067"
+        "foreground": "#d7ba7d"
       }
     },
     {
@@ -1211,6 +1211,64 @@
       "settings": {
         "foreground": "#ffb1fb"
       }
-    }
+    },
+    {
+      "name": "start at php files",
+      "scope": "punctuation.section.embedded.begin.php",
+      "settings": {
+        "foreground": "#8d8d8d"
+      }
+    },
+    {
+      "scope": "variable.language.special.self.python",
+      "settings": {
+        "foreground": "#8d8d8d",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "opening bracket: clean style",
+      "scope": "punctuation.definition.parameters.begin",
+      "settings": {
+        "foreground": "#d4d4d4",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "closing braket: clean style",
+      "scope": "punctuation.definition.parameters.end",
+      "settings": {
+        "foreground": "#d4d4d4",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "css class as a function",
+      "scope": "entity.name.tag.css",
+      "settings": {
+          "foreground": "#a7dff5"
+      }
+  },
+  {
+      "name": "css: no special treatement to certain css properties",
+      "scope": "support.type.vendored.property-name",
+      "settings": {
+          "foreground": "#e4e4e4"
+      }
+  },
+  {
+      "name": "css value",
+      "scope": "support.constant.property-value",
+      "settings": {
+          "foreground": "#d7ba7d"
+      }
+  },
+  {
+      "name": "css: subclass",
+      "scope": "entity.other.attribute-name.pseudo-element.css",
+      "settings": {
+          "foreground": "#4EC9B0"
+      }
+  }
   ]
 }

@@ -1,3 +1,3 @@
 # Simple Dark Theme
 
-Fork from the default dark theme but customized.
+Fork from the default dark theme but customized for simplification
