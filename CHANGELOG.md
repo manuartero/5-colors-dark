@@ -1,5 +1,10 @@
 # Change Log
 
+## 2.1.1
+
+- lighter sidebar foreground
+- markdown revision
+
 ## 2.1.0
 
 - css support

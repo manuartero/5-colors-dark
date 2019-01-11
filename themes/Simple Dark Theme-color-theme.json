@@ -20,13 +20,13 @@
     "settings.numberInputBackground": "#292929",
     "settings.textInputBackground": "#292929",
     "sideBar.background": "#08090f",
-    "sideBar.border": "#e9bf0421",
-    "sideBar.foreground": "#b8b8b8",
+    "sideBar.border": "#ffd90044",
+    "sideBar.foreground": "#ececec",
     "sideBarSectionHeader.foreground": "#8d8d8d",
     "sideBarTitle.foreground": "#bbbbbb",
     "statusBar.background": "#0e0d03",
     "tab.activeBackground": "#e9bf0421",
-    "titleBar.border": "#ffd900"
+    "titleBar.border": "#ffd900",
     //"activityBar.background": "#333333",
     //"activityBar.dropBackground": "#ffffff1f",
     //"activityBar.foreground": "#ffffff",
@@ -971,6 +971,20 @@
       }
     },
     {
+      "name": "Markdown bold text",
+      "scope": "markup.bold",
+      "settings": {
+        "foreground": "#d7ba7d"
+      }
+    },
+    {
+      "name": "Markdown code block",
+      "scope": "markup.fenced_code.block",
+      "settings": {
+        "foreground": "#ffb1fb"
+      }
+    },
+    {
       "name": "default text",
       "scope": "source",
       "settings": {
@@ -1246,29 +1260,29 @@
       "name": "css class as a function",
       "scope": "entity.name.tag.css",
       "settings": {
-          "foreground": "#a7dff5"
+        "foreground": "#a7dff5"
       }
-  },
-  {
+    },
+    {
       "name": "css: no special treatement to certain css properties",
       "scope": "support.type.vendored.property-name",
       "settings": {
-          "foreground": "#e4e4e4"
+        "foreground": "#e4e4e4"
       }
-  },
-  {
+    },
+    {
       "name": "css value",
       "scope": "support.constant.property-value",
       "settings": {
-          "foreground": "#d7ba7d"
+        "foreground": "#d7ba7d"
       }
-  },
-  {
+    },
+    {
       "name": "css: subclass",
       "scope": "entity.other.attribute-name.pseudo-element.css",
       "settings": {
-          "foreground": "#4EC9B0"
+        "foreground": "#4EC9B0"
       }
-  }
+    }
   ]
 }
