@@ -4,14 +4,15 @@ Fork from the default dark theme but customized for simplification
 
 ## Theme
 
-- **Text (default color)**: #e4e4e4
-- **Background**: #151516
+- **Text (default color)**: #E4E4E4 _almost white_
+- **Background**: #151516 _almost black_
 
-- **Keywords**: #8d8d8d _dark grey_
+- **Keywords**: #8D8D8D _dark grey_
 - **Functions**: #9CDCFE _blue_
-- **Classes**: #ffb1fb _pink_
-- **Strings**: #d7ba7d _orange_
-- **Error**: #f44747 _red_
+- **Classes**: #FFB1FB _pink_
+- **Strings**: #D7BA7D _brown_
+- **Errors**: #F44747 _red_
+- **Regex & numbers**: #FFD900 _yellow_
 
 ### Customization
 
@@ -24,4 +25,11 @@ Fork from the default dark theme but customized for simplification
         "[Simple Dark Theme]": {
         }
     },
+```
+
+### Publishing
+
+```
+ $> vsce package
+ $> vsce publish
 ```

@@ -26,7 +26,7 @@
     "sideBarTitle.foreground": "#bbbbbb",
     "statusBar.background": "#0e0d03",
     "tab.activeBackground": "#e9bf0421",
-    "titleBar.border": "#ffd900",
+    "titleBar.border": "#ffd900"
     //"activityBar.background": "#333333",
     //"activityBar.dropBackground": "#ffffff1f",
     //"activityBar.foreground": "#ffffff",
@@ -760,6 +760,9 @@
         "foreground": "#b267e6"
       }
     },
+    // ----------------------------
+    // SIMPLE DARK
+    // -----------------------------
     {
       "scope": "comment",
       "settings": {
@@ -992,6 +995,14 @@
       }
     },
     {
+      "name": "bold for function arguments",
+      "scope": "variable.parameter.function",
+      "settings": {
+        "foreground": "#FFFFFF",
+        "fontStyle": "bold"
+      }
+    },
+    {
       "name": "js: {} in React component",
       "scope": "punctuation.section.embedded",
       "settings": {
@@ -1047,6 +1058,13 @@
       "settings": {
         "foreground": "#688d6e",
         "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "regex as numbers and numbers",
+      "scope": "constant.character.set.regexp",
+      "settings": {
+        "foreground": "#ffe555"
       }
     },
     {
@@ -1282,6 +1300,27 @@
       "scope": "entity.other.attribute-name.pseudo-element.css",
       "settings": {
         "foreground": "#4EC9B0"
+      }
+    },
+    {
+      "name": "python: surronding [] in regex as normal strings",
+      "scope": "constant.other.set.regexp",
+      "settings": {
+        "foreground": "#d7ba7d"
+      }
+    },
+    {
+      "name": "python: self in python as argument",
+      "scope": "variable.parameter.function.language.special.self.python",
+      "settings": {
+        "foreground": "#8D8D8D"
+      }
+    },
+    {
+      "name": "pytho: magic function as a keyword",
+      "scope": "support.function.magic.python",
+      "settings": {
+        "foreground": "#8D8D8D"
       }
     }
   ]

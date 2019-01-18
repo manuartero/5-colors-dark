@@ -1,5 +1,13 @@
 # Change Log
 
+## 2.1.2
+
+- python improvements
+  . recognizing self as first argument
+  . magic functions considered keywords
+  . surronding [] in regex considered normal strings
+  . trying to set bold for function arguments
+
 ## 2.1.1
 
 - lighter sidebar foreground
