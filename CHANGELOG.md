@@ -1,5 +1,9 @@
 # Change Log
 
+## 2.1.4
+
+- fix everything italic
+
 ## 2.1.3
 
 - constants: from yellow to string orange (but darker)

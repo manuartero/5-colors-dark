@@ -213,19 +213,6 @@
       }
     },
     {
-      "scope": [
-        "support.type.vendored.property-name",
-        "support.type.property-name",
-        "variable.css",
-        "variable.scss",
-        "variable.other.less",
-        "source.coffee.embedded"
-      ],
-      "settings": {
-        "foreground": "#9cdcfe"
-      }
-    },
-    {
       "scope": "keyword.other.unit",
       "settings": {
         "foreground": "#b5cea8"
@@ -365,22 +352,29 @@
       "scope": [
         "beginning.punctuation.definition.list.markdown", // md list item
         "entity.name.function",
-        "entity.name.variable",
         "entity.name.tag",
-        "punctuation.section.embedded", // js: {} in React component
+        "entity.name.variable",
+        "meta.object-literal.key.js", // js object keys... needed?
         "punctuation.definition.parameters.begin", // opening bracket
         "punctuation.definition.parameters.end", // closing bracket
+        "punctuation.section.embedded", // js: {} in React component
+        "source.coffee.embedded",
         "source", // default text
         "support.function",
-        "support.variable",
+        "support.type.property-name",
         "support.type.property-name", // json property
+        "support.type.vendored.property-name",
         "support.type.vendored.property-name", // css no special treatement to certain css properties
-        "meta.object-literal.key.js", // js object keys... needed?
+        "support.variable",
+        "variable.css",
+        "variable.other.less",
         "variable.parameter",
+        "variable.scss",
         "variable"
       ],
       "settings": {
-        "foreground": "#e4e4e4"
+        "foreground": "#e4e4e4",
+        "fontStyle": ""
       }
     },
     {
@@ -487,7 +481,8 @@
         "support.type"
       ],
       "settings": {
-        "foreground": "#ffb1fb"
+        "foreground": "#ffb1fb",
+        "fontStyle": ""
       }
     },
     {
@@ -497,7 +492,8 @@
         "entity.other.attribute-name" // js: attributes for creating a React component
       ],
       "settings": {
-        "foreground": "#cea8ce"
+        "foreground": "#cea8ce",
+        "fontStyle": ""
       }
     },
     // ---------------------------------------------------------------------------------------------
@@ -513,7 +509,8 @@
         "entity.name.tag.css" // css class as a function
       ],
       "settings": {
-        "foreground": "#a7dff5"
+        "foreground": "#a7dff5",
+        "fontStyle": ""
       }
     },
     {
@@ -543,7 +540,8 @@
         "support.constant.property-value" // css value
       ],
       "settings": {
-        "foreground": "#d7ba7d"
+        "foreground": "#d7ba7d",
+        "fontStyle": ""
       }
     },
     {
@@ -562,7 +560,8 @@
         "constant.numeric"
       ],
       "settings": {
-        "foreground": "#ffbf33"
+        "foreground": "#ffbf33",
+        "fontStyle": ""
       }
     },
     // ---------------------------------------------------------------------------------------------
@@ -576,7 +575,8 @@
         "comment"
       ],
       "settings": {
-        "foreground": "#688d6e"
+        "foreground": "#688d6e",
+        "fontStyle": ""
       }
     },
     {
