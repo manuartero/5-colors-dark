@@ -1,6 +1,6 @@
 # Simple Dark Theme
 
-Fork from the default dark theme but customized for simplification
+Fork from the VSCode's default dark theme but customized for simplification
 
 ## Theme
 
@@ -12,7 +12,6 @@ Fork from the default dark theme but customized for simplification
 - **Classes**: #FFB1FB _pink_
 - **Strings**: #D7BA7D _brown_
 - **Errors**: #F44747 _red_
-- **Regex & numbers**: #FFD900 _yellow_
 
 ### Customization
 
