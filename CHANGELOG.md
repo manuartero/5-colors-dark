@@ -1,8 +1,15 @@
 # Change Log
 
+## 2.1.5
+
+- fix some some regex
+- fix some python variables as "cls"
+- function declaration: bold
+- python magic as keywords: bold
+
 ## 2.1.4
 
-- fix everything italic
+- fix everything in italic
 
 ## 2.1.3
 

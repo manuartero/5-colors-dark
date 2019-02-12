@@ -200,12 +200,6 @@
       }
     },
     {
-      "scope": "string.regexp",
-      "settings": {
-        "foreground": "#d16969"
-      }
-    },
-    {
       "name": "Reset JavaScript string interpolation expression",
       "scope": ["meta.template.expression"],
       "settings": {
@@ -239,13 +233,6 @@
       ],
       "settings": {
         "foreground": "#d4d4d4"
-      }
-    },
-    {
-      "name": "this.self",
-      "scope": "variable.language",
-      "settings": {
-        "foreground": "#569cd6"
       }
     },
     {
@@ -367,10 +354,11 @@
         "support.type.vendored.property-name", // css no special treatement to certain css properties
         "support.variable",
         "variable.css",
+        "variable.language",
         "variable.other.less",
         "variable.parameter",
         "variable.scss",
-        "variable"
+        "variable",
       ],
       "settings": {
         "foreground": "#e4e4e4",
@@ -407,13 +395,10 @@
         "storage",
         "keyword",
         "punctuation.accessor",
-        "punctuation.separator",
         "storage.modifier", // java public protected and private
         "storage.type", // const
         "support.function.builtin.go", // go make() len()...
         "variable.language.this", // java this
-        "variable.language.special.self.python", // python self
-        "variable.parameter.function.language.special.self.python" // python self as parameter
       ],
       "settings": {
         "foreground": "#8d8d8d",
@@ -427,12 +412,25 @@
         "punctuation.definition",
         "punctuation.section.embedded.begin.php", // php <?
         "punctuation.section.embedded.end.php",
+        "punctuation.separator",
         "storage.type.function.arrow", // ->
-        "support.function.magic.python" // python __init__
+        "variable.language.special.self.python", // python self
+        "variable.parameter.function.language.special.self.python" // python self as parameter
       ],
       "settings": {
         "foreground": "#8d8d8d",
         "fontStyle": ""
+      }
+    },
+    {
+      "name": "KEYWORDS (bold)",
+      "scope": [
+        "support.function.magic.python",
+        "support.variable.magic.python"
+      ],
+      "settings": {
+        "foreground": "#8d8d8d",
+        "fontStyle": "bold"
       }
     },
     // ---------------------------------------------------------------------------------------------
@@ -504,7 +502,6 @@
       "scope": [
         "support.function", // function call
         "support.constant.handlebars", // function declaration?
-        "entity.name.function", // function declaration
         "meta.function-call.generic.python", // python function call
         "entity.name.tag.css" // css class as a function
       ],
@@ -516,6 +513,7 @@
     {
       "name": "FUNCTIONS (bold)",
       "scope": [
+        "entity.name.function", // function declaration
         "markup.heading", // md headers
         "markup.underline" // md links
       ],
@@ -553,11 +551,12 @@
       }
     },
     {
-      "name": "STRINGS (darker)",
+      "name": "STRINGS (lighter)",
       "scope": [
         "constant.character.set.regexp", // regex
         "constant.character", // constants
-        "constant.numeric"
+        "constant.numeric",
+        "string.regexp", // regex
       ],
       "settings": {
         "foreground": "#ffbf33",
