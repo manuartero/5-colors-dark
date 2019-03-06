@@ -1,5 +1,14 @@
 # Change Log
 
+## 2.1.6
+
+- background to lighter grey (#1b1b18)
+- whitespaces to 4e4e47
+- python multi doc to bold
+- keywords no italic
+- special python symbols (and self) to light blue (#a3fdee)
+- removed bold to function declarations
+
 ## 2.1.5
 
 - fix some some regex

@@ -4,7 +4,7 @@
   "colors": {
     "activityBar.border": "#e9bf0421",
     "activityBarBadge.background": "#007acc",
-    "editor.background": "#151516",
+    "editor.background": "#1b1b18",
     "editor.foreground": "#d4d4d4",
     "editor.inactiveSelectionBackground": "#3a3d41",
     "editor.lineHighlightBackground": "#000000",
@@ -13,6 +13,7 @@
     "editorCursor.background": "#ffffff",
     "editorIndentGuide.activeBackground": "#707070",
     "editorIndentGuide.background": "#404040",
+    "editorWhitespace.foreground": "#4e4e47",
     "input.placeholderForeground": "#a6a6a6",
     "list.dropBackground": "#383b3d",
     "panel.background": "#08090f",
@@ -356,7 +357,6 @@
         "variable.css",
         "variable.language",
         "variable.other.less",
-        "variable.parameter",
         "variable.scss",
         "variable",
       ],
@@ -366,7 +366,7 @@
       }
     },
     {
-      "name": "NORMAL TEXT (bold)",
+      "name": "NORMAL TEXT (special)",
       "scope": [
         "markup.bold",
         "variable.parameter.function",
@@ -374,14 +374,24 @@
       ],
       "settings": {
         "foreground": "#FFFFFF",
-        "fontStyle": "bold"
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "NORMAL TEXT (special II)",
+      "scope": [
+        "variable.parameter"
+      ],
+      "settings": {
+        "foreground": "#FFFFFF",
+        "fontStyle": "italic"
       }
     },
     // ---------------------------------------------------------------------------------------------
     // -------------------------            KEYWORDS            ------------------------------------
     // ---------------------------------------------------------------------------------------------
     {
-      "name": "KEYWORDS (italic)",
+      "name": "KEYWORDS (words)",
       "scope": [
         "constant.language", // true false
         "keyword.operator.cast",
@@ -402,11 +412,11 @@
       ],
       "settings": {
         "foreground": "#8d8d8d",
-        "fontStyle": "italic"
+        "fontStyle": ""
       }
     },
     {
-      "name": "KEYWORDS (no italic)",
+      "name": "KEYWORDS (symbols)",
       "scope": [
         "keyword.operator", // + =
         "punctuation.definition",
@@ -414,8 +424,6 @@
         "punctuation.section.embedded.end.php",
         "punctuation.separator",
         "storage.type.function.arrow", // ->
-        "variable.language.special.self.python", // python self
-        "variable.parameter.function.language.special.self.python" // python self as parameter
       ],
       "settings": {
         "foreground": "#8d8d8d",
@@ -423,14 +431,15 @@
       }
     },
     {
-      "name": "KEYWORDS (bold)",
+      "name": "KEYWORDS (special)",
       "scope": [
         "support.function.magic.python",
-        "support.variable.magic.python"
+        "support.variable.magic.python",
+        "variable.language.special.self.python", // python self
+        "variable.parameter.function.language.special.self.python" // python self as parameter
       ],
       "settings": {
-        "foreground": "#8d8d8d",
-        "fontStyle": "bold"
+        "foreground": "#a3fdee",
       }
     },
     // ---------------------------------------------------------------------------------------------
@@ -511,7 +520,7 @@
       }
     },
     {
-      "name": "FUNCTIONS (bold)",
+      "name": "FUNCTIONS (special)",
       "scope": [
         "entity.name.function", // function declaration
         "markup.heading", // md headers
@@ -519,7 +528,7 @@
       ],
       "settings": {
         "foreground": "#a7dff5",
-        "fontStyle": "bold"
+        "fontStyle": "underline"
       }
     },
     // ---------------------------------------------------------------------------------------------
@@ -544,14 +553,17 @@
     },
     {
       "name": "STRINGS (bold)",
-      "scope": ["constant.other.placeholder"],
+      "scope": [
+        "constant.other.placeholder",
+        "string.quoted.docstring.multi.python",
+      ],
       "settings": {
         "foreground": "#d7ba7d",
         "fontStyle": "bold"
       }
     },
     {
-      "name": "STRINGS (lighter)",
+      "name": "STRINGS (special)",
       "scope": [
         "constant.character.set.regexp", // regex
         "constant.character", // constants
