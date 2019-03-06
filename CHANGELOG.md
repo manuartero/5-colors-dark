@@ -1,5 +1,12 @@
 # Change Log
 
+## 2.2.0
+
+- function call treated as normal text (white)
+- function declaration: remove underline
+- python: @ for decorators to function blue
+- Class declaration: add underline
+
 ## 2.1.6
 
 - background to lighter grey (#1b1b18)

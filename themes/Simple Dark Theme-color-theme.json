@@ -366,6 +366,17 @@
       }
     },
     {
+      "name": "NORMAL TEXT (function call)",
+      "scope": [
+        "meta.function-call.generic.python", // function call python
+        "support.function", // function call
+      ],
+      "settings": {
+        "foreground": "#e4e4e4",
+        "fontStyle": ""
+      }
+    },
+    {
       "name": "NORMAL TEXT (special)",
       "scope": [
         "markup.bold",
@@ -373,7 +384,7 @@
         "variable.other.property"
       ],
       "settings": {
-        "foreground": "#FFFFFF",
+        "foreground": "#ffffff",
         "fontStyle": ""
       }
     },
@@ -383,7 +394,7 @@
         "variable.parameter"
       ],
       "settings": {
-        "foreground": "#FFFFFF",
+        "foreground": "#ffffff",
         "fontStyle": "italic"
       }
     },
@@ -489,7 +500,7 @@
       ],
       "settings": {
         "foreground": "#ffb1fb",
-        "fontStyle": ""
+        "fontStyle": "underline"
       }
     },
     {
@@ -509,10 +520,10 @@
     {
       "name": "FUNCTIONS",
       "scope": [
-        "support.function", // function call
+        "entity.name.function", // function declaration
+        "entity.name.tag.css", // css class as a function
+        "punctuation.definition.decorator.python", // python @
         "support.constant.handlebars", // function declaration?
-        "meta.function-call.generic.python", // python function call
-        "entity.name.tag.css" // css class as a function
       ],
       "settings": {
         "foreground": "#a7dff5",
@@ -522,7 +533,6 @@
     {
       "name": "FUNCTIONS (special)",
       "scope": [
-        "entity.name.function", // function declaration
         "markup.heading", // md headers
         "markup.underline" // md links
       ],
