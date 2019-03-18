@@ -58,12 +58,6 @@
       }
     },
     {
-      "scope": "constant.language",
-      "settings": {
-        "foreground": "#569cd6"
-      }
-    },
-    {
       "scope": "constant.regexp",
       "settings": {
         "foreground": "#646695"
@@ -404,7 +398,6 @@
     {
       "name": "KEYWORDS (words)",
       "scope": [
-        "constant.language", // true false
         "keyword.operator.cast",
         "keyword.operator.expression",
         "keyword.operator.instanceof",
@@ -444,6 +437,7 @@
     {
       "name": "KEYWORDS (special)",
       "scope": [
+        "constant.language", // true, false, none...
         "support.function.magic.python",
         "support.variable.magic.python",
         "variable.language.special.self.python", // python self
@@ -496,7 +490,6 @@
         "support.constant.dom",
         "support.constant.json", // js: JSON as class
         "support.constant.math",
-        "support.type"
       ],
       "settings": {
         "foreground": "#ffb1fb",
@@ -511,6 +504,16 @@
       ],
       "settings": {
         "foreground": "#cea8ce",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "CLASSES (NO UNDERLINE)",
+      "scope": [
+        "support.type"
+      ],
+      "settings": {
+        "foreground": "#ffb1fb",
         "fontStyle": ""
       }
     },

@@ -1,5 +1,10 @@
 # Change Log
 
+## 2.2.1
+
+- keywords such as true, false, none, null... moved to special light green
+- fixed underline in everything related to a class
+
 ## 2.2.0
 
 - function call treated as normal text (white)
