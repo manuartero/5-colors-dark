@@ -1,5 +1,10 @@
 # Change Log
 
+## 2.2.2
+
+- Simplified the title bar and the side bar separators
+- fixed decorators for Python
+
 ## 2.2.1
 
 - keywords such as true, false, none, null... moved to special light green
