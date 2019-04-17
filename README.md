@@ -4,13 +4,14 @@ Fork from the VSCode's default dark theme but customized for simplification
 
 ## Theme
 
-- **Text (default color)**: #E4E4E4 _almost white_
+- **Text (default color)**: #E7E7E7 _almost white_
 - **Background**: #151516 _almost black_
 
-- **Keywords**: #8D8D8D _dark grey_
-- **Functions**: #9CDCFE _blue_
+- **Keywords**: #B3DD9D _green_
+- **Operators**: #8D8D8D _dark grey_
+- **Functions**: #9CDCFE _light blue_
 - **Classes**: #FFB1FB _pink_
-- **Strings**: #D7BA7D _brown_
+- **Strings**: #D7BA7D _light orange_
 - **Errors**: #F44747 _red_
 
 ### Customization

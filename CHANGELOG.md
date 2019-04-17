@@ -1,5 +1,10 @@
 # Change Log
 
+## 2.3.0
+
+- New color for keywords: green #b3dd9d
+- lighter base color: #e7e7e7
+
 ## 2.2.2
 
 - Simplified the title bar and the side bar separators

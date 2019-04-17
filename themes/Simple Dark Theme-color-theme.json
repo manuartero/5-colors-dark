@@ -359,7 +359,7 @@
         "variable",
       ],
       "settings": {
-        "foreground": "#e4e4e4",
+        "foreground": "#e7e7e7",
         "fontStyle": ""
       }
     },
@@ -370,7 +370,7 @@
         "support.function", // function call
       ],
       "settings": {
-        "foreground": "#e4e4e4",
+        "foreground": "#e7e7e7",
         "fontStyle": ""
       }
     },
@@ -407,7 +407,6 @@
         "keyword.operator.instanceof",
         "keyword.operator.logical.python",
         "keyword.operator.new",
-        "keyword.operator",
         "keyword.operator.sizeof",
         "keyword.control",
         "storage",
@@ -419,7 +418,8 @@
         "variable.language.this", // java this
       ],
       "settings": {
-        "foreground": "#8d8d8d",
+        // "foreground": "#8d8d8d",
+        "foreground": "#b3dd9d",
         "fontStyle": ""
       }
     },
@@ -461,8 +461,6 @@
         "entity.name.type",
         "keyword.channel.go", // go chan type
         "keyword.map.go", // go map type
-        "markup.fenced_code.block", // md code block
-        "markup.inline.raw", // md: code inline
         "meta.return-type",
         "meta.type.cast.expr",
         "meta.type.new.expr",
@@ -513,8 +511,10 @@
     {
       "name": "CLASSES (NO UNDERLINE)",
       "scope": [
-        "support.type",
         "entity.other.inherited-class", // java classes ...
+        "markup.fenced_code.block", // md code block
+        "markup.inline.raw", // md: code inline
+        "support.type",
       ],
       "settings": {
         "foreground": "#ffb1fb",
@@ -565,7 +565,7 @@
         "support.constant.property-value" // css value
       ],
       "settings": {
-        "foreground": "#d7ba7d",
+        "foreground": "#fad591",
         "fontStyle": ""
       }
     },
@@ -576,7 +576,7 @@
         "string.quoted.docstring.multi.python",
       ],
       "settings": {
-        "foreground": "#d7ba7d",
+        "foreground": "#fad591",
         "fontStyle": "bold"
       }
     },
