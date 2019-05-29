@@ -1,5 +1,11 @@
 # Change Log
 
+## 2.3.1
+
+- darker green for keywords (closer to grey) + italic
+- bold for function declarations
+- comments to dark grey
+
 ## 2.3.0
 
 - New color for keywords: green #b3dd9d

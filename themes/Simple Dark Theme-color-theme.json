@@ -2,7 +2,8 @@
   "$schema": "vscode://schemas/color-theme",
   "type": "dark",
   "colors": {
-    "activityBar.border": "#e9bf0421",
+    "activityBar.background": "#1b1b18",
+    "activityBar.border": "#535353",
     "activityBarBadge.background": "#007acc",
     "editor.background": "#1b1b18",
     "editor.foreground": "#d4d4d4",
@@ -13,11 +14,12 @@
     "editorCursor.background": "#ffffff",
     "editorIndentGuide.activeBackground": "#707070",
     "editorIndentGuide.background": "#404040",
+    "editorRuler.foreground": "#524950",
     "editorWhitespace.foreground": "#4e4e47",
     "input.placeholderForeground": "#a6a6a6",
     "list.dropBackground": "#383b3d",
-    "panel.background": "#08090f",
-    "panel.border": "#e9bf0421",
+    "panel.background": "#1b1b18",
+    "panel.border": "#535353",
     "settings.numberInputBackground": "#292929",
     "settings.textInputBackground": "#292929",
     "sideBar.background": "#1b1b18",
@@ -29,6 +31,8 @@
     "sideBarTitle.foreground": "#bbbbbb",
     "statusBar.background": "#0e0d03",
     "tab.activeBackground": "#e9bf0421",
+    "terminal.background": "#1b1b18",
+    "terminal.foreground": "#d4d4d4",
     "titleBar.activeBackground": "#1b1b18",
     "titleBar.border": "#1b1b18",
     "titleBar.inactiveBackground": "#1b1b18",
@@ -419,8 +423,8 @@
       ],
       "settings": {
         // "foreground": "#8d8d8d",
-        "foreground": "#b3dd9d",
-        "fontStyle": ""
+        "foreground": "#b5cea8",
+        "fontStyle": "italic"
       }
     },
     {
@@ -535,7 +539,7 @@
       ],
       "settings": {
         "foreground": "#a7dff5",
-        "fontStyle": ""
+        "fontStyle": "bold"
       }
     },
     {
@@ -562,6 +566,7 @@
         "punctuation.definition.template-expression.end",
         "punctuation.section.embedded", // ?
         "string",
+        "string.quoted.single",
         "support.constant.property-value" // css value
       ],
       "settings": {
@@ -570,14 +575,14 @@
       }
     },
     {
-      "name": "STRINGS (bold)",
+      "name": "STRINGS (doc)",
       "scope": [
         "constant.other.placeholder",
         "string.quoted.docstring.multi.python",
       ],
       "settings": {
         "foreground": "#fad591",
-        "fontStyle": "bold"
+        "fontStyle": "italic"
       }
     },
     {
@@ -604,7 +609,7 @@
         "comment"
       ],
       "settings": {
-        "foreground": "#688d6e",
+        "foreground": "#8d8d8d",
         "fontStyle": ""
       }
     },
@@ -614,7 +619,7 @@
         "keyword.other.phpdoc" // php doc: keywords
       ],
       "settings": {
-        "foreground": "#688d6e",
+        "foreground": "#8d8d8d",
         "fontStyle": "bold"
       }
     }
