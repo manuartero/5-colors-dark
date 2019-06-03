@@ -197,12 +197,6 @@
       }
     },
     {
-      "scope": "string.value",
-      "settings": {
-        "foreground": "#ce9178"
-      }
-    },
-    {
       "name": "Reset JavaScript string interpolation expression",
       "scope": ["meta.template.expression"],
       "settings": {
@@ -423,7 +417,7 @@
       ],
       "settings": {
         // "foreground": "#8d8d8d",
-        "foreground": "#b5cea8",
+        "foreground": "#b1ebe1",
         "fontStyle": "italic"
       }
     },
@@ -453,6 +447,7 @@
       ],
       "settings": {
         "foreground": "#a3fdee",
+        "fontStyle": "bold"
       }
     },
     // ---------------------------------------------------------------------------------------------
@@ -529,17 +524,26 @@
     // -------------------------            FUNCTIONS            -----------------------------------
     // ---------------------------------------------------------------------------------------------
     {
-      "name": "FUNCTIONS",
+      "name": "FUNCTION DECLARATION",
       "scope": [
         "entity.name.function", // function declaration
-        "entity.name.tag.css", // css class as a function
-        "punctuation.definition.decorator.python", // python @
-        "support.type.python", // python @foo
         "support.constant.handlebars", // function declaration?
       ],
       "settings": {
         "foreground": "#a7dff5",
         "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "FUNCTIONS",
+      "scope": [
+        "entity.name.tag.css", // css class as a function
+        "punctuation.definition.decorator.python", // python @
+        "support.type.python", // python @foo
+      ],
+      "settings": {
+        "foreground": "#a7dff5",
+        "fontStyle": ""
       }
     },
     {
@@ -566,6 +570,7 @@
         "punctuation.definition.template-expression.end",
         "punctuation.section.embedded", // ?
         "string",
+        "string.value",
         "string.quoted.single",
         "support.constant.property-value" // css value
       ],

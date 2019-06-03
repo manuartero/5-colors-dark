@@ -2,7 +2,7 @@
   "name": "simple-dark-theme",
   "displayName": "Simple Dark Theme",
   "description": "Color theme for VSCode that follows the KISS principle",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "publisher": "manutero",
   "repository": {
     "type": "git",

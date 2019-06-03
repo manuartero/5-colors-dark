@@ -1,5 +1,10 @@
 # Change Log
 
+## 2.3.2
+
+- Terraform strings
+- Lighter green for keywords
+
 ## 2.3.1
 
 - darker green for keywords (closer to grey) + italic
